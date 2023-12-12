@@ -362,3 +362,7 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/macos,node,jetbrains,solidity
 
 .idea
+/**/local/
+/**/artifacts/
+/**/cache/
+/**/typechain/
