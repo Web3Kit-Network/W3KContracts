@@ -23,9 +23,6 @@ contract W3KAssetsFactory is W3KRolesV1, Version {
     mapping(W3KAssetsBaseTypes.AssetsTypes=>address) public assetsImpls;
     mapping(address=>W3KAssetsBaseTypes.AssetsTypes) public proxyTypes;
 
-    //specified impls for fixed proxy to impl mapping
-    mapping(address=>address) public specifyImpls;
-
     address public operator;
 
     string internal commonBaseUri = "";
