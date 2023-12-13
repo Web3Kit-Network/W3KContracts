@@ -40,7 +40,7 @@ contract W3KAssetsFactory is W3KRolesV1, Version {
         W3KAssetsBaseTypes.AssetsTypes _type,
         W3KAssetsBaseTypes.InitParam memory _param,
         W3KAssetsBaseTypes.ERC20InitParam calldata _erc20Param
-    ) onlyExecutor external {
+    ) external {
         require(operator != address(0), "operator not set yet");
         require(_type != W3KAssetsBaseTypes.AssetsTypes.PLACEHOLDER, "invalid type");
 
