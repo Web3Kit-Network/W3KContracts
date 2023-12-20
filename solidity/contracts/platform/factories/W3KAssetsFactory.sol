@@ -54,7 +54,7 @@ contract W3KAssetsFactory is W3KRolesV1, Version {
             W3KERC20(proxyAddr).initERC20(_erc20Param);
         }
 
-        emit AssetsContractCreated(msg.sender, operator, _type, _param, _erc20Param);
+        emit AssetsContractCreated(msg.sender, proxyAddr, _type, _param, _erc20Param);
     }
 
     function updateImpl(W3KAssetsBaseTypes.AssetsTypes _type, address _implAddr) onlyExecutor external {
